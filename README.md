@@ -1,3 +1,11 @@
+# Run Instructions
+
+## Mac Commands
+npm install <!-- Install required dependencies -->
+node ./server/index.js <!-- Connects mongodb and starts node -->
+ng serve <!-- Starts the angular app and creates localhost port for viewing web page -->
+
+
 # InventoryApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.6.
