@@ -1,9 +1,9 @@
 # Run Instructions
 
 ## Mac Commands
-npm install <!-- Install required dependencies -->
-node ./server/index.js <!-- Connects mongodb and starts node -->
-ng serve <!-- Starts the angular app and creates localhost port for viewing web page -->
+### npm install <!-- Install required dependencies -->
+### node ./server/index.js <!-- Connects mongodb and starts node -->
+### ng serve <!-- Starts the angular app and creates localhost port for viewing web page -->
 
 
 # InventoryApp
