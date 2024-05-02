@@ -51,18 +51,16 @@
 
 // connectDB();
 
-
 require('dotenv').config();
 const express = require('express');
 const { MongoClient } = require('mongodb');
 const cors = require('cors');
 const itemsRouter = require('./routes/items');  // Ensure the path is correct
-app.use('/api/items', itemsRouter);
-
 
 const app = express();
 app.use(cors());
 app.use(express.json());
+app.use('/api/items', itemsRouter);
 
 const uri = process.env.MONGO_URI;
 const client = new MongoClient(uri);
