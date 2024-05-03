@@ -7,7 +7,7 @@
 <!-- * * * * * * * to get started with your project! * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
-<style>
+<!-- <style>
   :host {
     --bright-blue: oklch(51.01% 0.274 263.83);
     --electric-violet: oklch(53.18% 0.28 296.97);
@@ -322,7 +322,7 @@
       </div>
     </div>
   </div>
-</main>
+</main> -->
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * * -->
@@ -333,4 +333,43 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 
-<router-outlet />
+<!-- <router-outlet /> -->
+
+
+<!-- <main class="main">
+  <p>hi</p>
+  <router-outlet></router-outlet>
+</main> -->
+
+
+<!-- 
+<header></header>
+
+<!-- Main Content Area 
+<main class="main">
+  <div class="content">
+    <h1>Welcome to the Inventory Management System</h1>
+    <p>Manage your inventory seamlessly.</p>
+
+    <!-- Buttons to add products and perform other actions 
+    <button (click)="addProduct()">Add Product</button>
+    <!-- You can add more buttons for other actions like updating or deleting products 
+  </div>
+</main>
+
+<!-- Router Outlet for displaying routed components 
+<router-outlet></router-outlet> -->
+
+
+
+
+
+
+
+<app-header></app-header> <!-- Only include this if HeaderComponent is intended for use across all routes -->
+<main>
+  <p>Welcome! to the Inventory Management System</p>
+  <!-- <button (click)="addProduct()">Add Product</button> -->
+  <!-- Include any other buttons or content here -->
+</main>
+<router-outlet></router-outlet> <!-- This is used for routing, ensure routes are configured properly -->
