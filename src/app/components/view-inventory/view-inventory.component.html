@@ -1,0 +1,12 @@
+<h2>Inventory</h2>
+<div class="inventory-container">
+  <div *ngFor="let item of items" class="inventory-card">
+    <h3>{{ item.name }}</h3>
+    <p>Quantity: {{ item.quantity }}</p>
+    <p>Price: {{ item.price | currency:'USD' }}</p>
+    <p>{{ item.description }}</p>
+    <button (click)="confirmDelete(item)">Delete</button> <!-- Add confirmDelete method -->
+    <button (click)="editItem(item)">Edit</button> <!-- Add editItem method -->
+
+  </div>
+</div>

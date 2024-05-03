@@ -1,1 +1,109 @@
-/* You can add global styles to this file, and also import other style files */
+
+  /* Dark theme colors */
+:root {
+  --background-color: #212529; /* Dark gray background */
+  --card-background-color: #333333; /* Darker gray cards */
+  --card-border-color: #555555; /* Light gray border */
+  --text-color: #ffffff; /* White text */
+  --primary-color: #007bff; /* Blue primary color */
+  --secondary-color: #ffc107; /* Yellow secondary color */
+  --accent-color: #dc3545; /* Red accent color */
+}
+
+
+
+
+.inventory-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px;
+  background-color: var(--background-color);
+}
+
+.inventory-card {
+  background-color: var(--card-background-color);
+  border: 1px solid var(--card-border-color);
+  border-radius: 5px;
+  padding: 15px;
+  margin: 10px;
+  width: 250px;
+  color: var(--text-color);
+}
+
+.inventory-card h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: var(--primary-color); /* Use primary color for item names */
+}
+
+.inventory-card p {
+  margin-bottom: 5px;
+}
+
+h2 {
+  color: var(--text-color);
+}
+
+header {
+  background-color: var(--primary-color); /* Use primary color for header background */
+  color: var(--text-color);
+}
+
+body {
+  background-color: var(--background-color); /* Use the defined background color */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+
+* add Inventory Component Styles *
+
+.add-inventory-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  background-color: var(--background-color);
+}
+
+.add-inventory-form {
+  width: 500px;
+  background-color: var(--card-background-color);
+  border: 1px solid var(--card-border-color);
+  border-radius: 5px;
+  padding: 20px;
+  color: var(--text-color);
+}
+
+.add-inventory-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.add-inventory-form input,
+.add-inventory-form textarea {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid var(--card-border-color);
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+
+.add-inventory-form button {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Responsive Adjustments */
+
+@media only screen and (max-width: 768px) {
+  .add-inventory-form {
+    width: 100%;
+  }
+}
