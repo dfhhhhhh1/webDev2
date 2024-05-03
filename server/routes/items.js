@@ -1,6 +1,7 @@
+
 const express = require('express');
 const router = express.Router();
-const Item = require('../models/item'); // Adjust the path as necessary
+const Item = require('../models/item'); // Ensure the path is correct
 
 // Get all items
 router.get('/', async (req, res) => {
@@ -11,7 +12,6 @@ router.get('/', async (req, res) => {
         res.status(500).json({ message: err.message });
     }
 });
-
 // Get one item
 router.get('/:id', async (req, res) => {
     try {
@@ -28,6 +28,7 @@ router.post('/', async (req, res) => {
     const item = new Item({
         name: req.body.name,
         quantity: req.body.quantity,
+        price: req.body.price, // Ensure that price is captured from the request
         description: req.body.description
     });
     try {
@@ -42,6 +43,7 @@ router.post('/', async (req, res) => {
 router.put('/:id', async (req, res) => {
     try {
         const updatedItem = await Item.findByIdAndUpdate(req.params.id, req.body, { new: true });
+        if (!updatedItem) return res.status(404).json({ message: "Item not found" });
         res.json(updatedItem);
     } catch (err) {
         res.status(400).json({ message: err.message });
@@ -58,5 +60,6 @@ router.delete('/:id', async (req, res) => {
         res.status(500).json({ message: err.message });
     }
 });
+
 
 module.exports = router;
