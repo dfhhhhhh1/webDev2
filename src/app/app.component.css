@@ -1,0 +1,15 @@
+/* app.component.css or styles.css */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;  /* Stack elements vertically */
+  min-height: 100vh;       /* Minimum height of 100% of the viewport height */
+}
+
+main {
+  flex: 1;  /* Allows the main content to expand and fill the space */
+}

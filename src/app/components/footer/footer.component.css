@@ -1,0 +1,15 @@
+footer {
+  background-color: #34495e; /* Dark shade of blue, matches the header */
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 20px;
+  width: 100%;
+  box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+}
+
+.container {
+  min-height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Space between content and footer */
+}
